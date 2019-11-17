@@ -38,26 +38,29 @@ quizWindow.pack();
 		// 6. ask a question that relates to the image
 String Que = JOptionPane.showInputDialog(null, "Who dis?????????");
 		// 7. print "CORRECT" if the user gave the right answer
-if(Que){
-	
+if(Que.equals("Goku")){
+	JOptionPane.showMessageDialog(null, "CORRECTAMUNDO");
 }
 	// 8. print "INCORRECT" if the answer is wrong
-
+else{
+	JOptionPane.showMessageDialog(null, "YOUR TRASH");
+}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+quizWindow.remove(Immg);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
-		// 11. add the second image to the quiz window
+String Img1 = ("https://i.pinimg.com/originals/61/2e/00/612e00711b7448b5d46ce6b4686a45a3.jpg");
+Component Immmg = createImage(Img1);
+// 11. add the second image to the quiz window
 
 		// 12. pack the quiz window
 
 		// 13. ask another question
 
 		// 14+ check answer, say if correct or incorrect, etc.
+}
 
-	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
 		URL url = new URL(imageUrl);
