@@ -50,16 +50,22 @@ else{
 quizWindow.remove(Immg);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-String Img1 = ("https://i.pinimg.com/originals/61/2e/00/612e00711b7448b5d46ce6b4686a45a3.jpg");
-Component Immmg = createImage(Img1);
+String Img1 = ("https://i.pinimg.com/originals/98/02/72/980272e5300fe463b910a9794604ea53.jpg");
+Component Img2 = createImage(Img1);
 // 11. add the second image to the quiz window
-
+quizWindow.add(Img2);
 		// 12. pack the quiz window
-
+quizWindow.pack();
 		// 13. ask another question
-
+String Que2 = JOptionPane.showInputDialog("Now Who is this");
 		// 14+ check answer, say if correct or incorrect, etc.
+if(Que2.equals("Gohan")) {
+JOptionPane.showMessageDialog(null, "YOU GOT IT");	
+}	
+else {	
+	JOptionPane.showMessageDialog(null, "NOOOOOOOOOOOOOOO");
 }
+	}
 
 
 	private Component createImage(String imageUrl) throws MalformedURLException {

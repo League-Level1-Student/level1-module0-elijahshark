@@ -5,7 +5,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class houses {
 	static Robot r2 = new Robot("batman");
 	public static void main(String[] args) {
-	
+		
 	r2.setSpeed(100);
 	r2.miniaturize();
 	r2.setX(50);
