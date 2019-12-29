@@ -21,10 +21,10 @@ public class BodyPartQuiz {
 	// package,or if you prefer, get celebrity photos from the Internet,
 	// place them in the default package, and change the names below.
 
-	String firstImage = "src/body_part_quiz/arnold.jpeg";
-	String secondImage = "src/body_part_quiz/leonardo.jpeg";
-	String thirdImage = "src/body_part_quiz/morgan.jpeg";
-	String fourthImage = "src/body_part_quiz/jack.jpeg";
+	String firstImage = "src/_05_body_part_quiz/arnold.jpeg";
+	String secondImage = "src/_05_body_part_quiz/leonardo.jpeg";
+	String thirdImage = "src/_05_body_part_quiz/morgan.jpeg";
+	String fourthImage = "src/_05_body_part_quiz/jack.jpeg";
 
 	JFrame window = new JFrame();
 	JPanel panel = new JPanel();
@@ -59,15 +59,47 @@ initializeGui();
 
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
-
+if(guess.equals("Arnold") ) {
+JOptionPane.showMessageDialog(null, "correct");	
+}
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
-
+else {
+	JOptionPane.showMessageDialog(null, "wrong This is Arnold");
+}
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
-
+		String guess1 = JOptionPane.showInputDialog("who is this?");
+		if(guess1.equals("Leonardo") ) {
+			JOptionPane.showMessageDialog(null, "correct");	
+			}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong This is Leonardo");
+		}
+		showNextImage();
+		String guess2 = JOptionPane.showInputDialog("who is this?");
+		if(guess2.equals("Morgan") ) {
+			JOptionPane.showMessageDialog(null, "correct");	
+			}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong This is Morgan");
+		}
+		showNextImage();
+		String guess3 = JOptionPane.showInputDialog("who is this?");
+		if(guess3.equals("Jack") ) {
+			JOptionPane.showMessageDialog(null, "correct");	
+			}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong This is Jack");
+		}
+		
+		
+		
+		
+		
+		
 		// 9. Show them their current score
 
 	}
