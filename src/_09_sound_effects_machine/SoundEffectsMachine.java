@@ -47,16 +47,16 @@ private void playSound(String fileName) {
 public void actionPerformed(ActionEvent e) {
 	// TODO Auto-generated method stub
 if(button == e.getSource())	{
-playSound("shrek.mp3");
+playSound("shrek.wav");
 }
 if(button1 == e.getSource())	{
-	playSound("mine.mp3");
+	playSound("mine.wav");
 }
 if(button2 == e.getSource())	{
-	playSound("sponge.mp3");
+	playSound("sponge.wav");
 }
 if(button3 == e.getSource())	{
-	playSound("coconut.mp4");
+	playSound("coconut.wav");
 }
 
 }
